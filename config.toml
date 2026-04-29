@@ -4,3 +4,7 @@ title = 'zhouz blog'
 
 [params]
   description = '个人博客、技术笔记与学习记录'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
