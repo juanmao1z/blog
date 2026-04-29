@@ -5,6 +5,21 @@ title = 'zhouz blog'
 [params]
   description = '个人博客、技术笔记与学习记录'
 
+  [params.giscus]
+    enabled = true
+    repo = 'juanmao1z/blog'
+    repoId = 'R_kgDOSPj5Rg'
+    category = 'Announcements'
+    categoryId = 'DIC_kwDOSPj5Rs4C78in'
+    mapping = 'pathname'
+    strict = '0'
+    reactionsEnabled = '1'
+    emitMetadata = '0'
+    inputPosition = 'bottom'
+    theme = 'light'
+    lang = 'zh-CN'
+    loading = 'lazy'
+
 [markup]
   [markup.highlight]
     noClasses = false

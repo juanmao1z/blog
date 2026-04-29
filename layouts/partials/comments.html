@@ -1,0 +1,24 @@
+{{ with .Site.Params.giscus }}
+  {{ if .enabled }}
+    <section class="comments" aria-label="评论">
+      <h2>评论</h2>
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="{{ .repo }}"
+        data-repo-id="{{ .repoId }}"
+        data-category="{{ .category }}"
+        data-category-id="{{ .categoryId }}"
+        data-mapping="{{ .mapping }}"
+        data-strict="{{ .strict }}"
+        data-reactions-enabled="{{ .reactionsEnabled }}"
+        data-emit-metadata="{{ .emitMetadata }}"
+        data-input-position="{{ .inputPosition }}"
+        data-theme="{{ .theme }}"
+        data-lang="{{ .lang }}"
+        data-loading="{{ .loading }}"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+  {{ end }}
+{{ end }}

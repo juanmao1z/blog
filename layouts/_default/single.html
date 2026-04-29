@@ -9,4 +9,7 @@
       {{ .Content }}
     </div>
   </article>
+  {{ if eq .Section "posts" }}
+    {{ partial "comments.html" . }}
+  {{ end }}
 {{ end }}
