@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <section class="hero">
+    <p class="eyebrow">blog.zhouz.online</p>
+    <h1>记录技术、想法和折腾过程。</h1>
+    <p>{{ .Site.Params.description }}</p>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>最新文章</h2>
+      <a href="/posts/">查看全部</a>
+    </div>
+    <div class="post-list">
+      {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+        <article class="post-item">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Summary | plainify | truncate 120 }}</p>
+        </article>
+      {{ else }}
+        <p class="empty">还没有文章。</p>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

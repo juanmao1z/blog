@@ -1,0 +1,6 @@
+baseURL = 'https://blog.zhouz.online/'
+languageCode = 'zh-cn'
+title = 'zhouz blog'
+
+[params]
+  description = '个人博客、技术笔记与学习记录'
