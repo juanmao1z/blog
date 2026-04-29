@@ -28,6 +28,7 @@ draft: false
 ## 输出规范
 请严格按照以下JSON格式输出，结果用[PPT_OUTLINE]和[/PPT_OUTLINE]包裹：
 
+```text
 [PPT_OUTLINE]
 {
   "ppt_outline": {
@@ -56,7 +57,8 @@ draft: false
   }
 }
 [/PPT_OUTLINE]
+```
 
 ## Constraints
 1. 必须严格遵循JSON格式。
-2. **页数要求*：{{PAGE_REQUIREMENTS}}
+2. **页数要求**：{{PAGE_REQUIREMENTS}}
