@@ -162,7 +162,8 @@ time {
 .article-body pre {
   overflow-x: auto;
   padding: 18px;
-  background: var(--code-bg);
+  background: #f2f5f1;
+  border: 1px solid var(--line);
   border-radius: 8px;
 }
 
@@ -173,7 +174,20 @@ time {
 }
 
 .article-body pre code {
+  color: #1f2a24;
+  background: transparent;
   padding: 0;
+}
+
+.article-body .highlight pre {
+  color: #1f2a24 !important;
+  background: #f2f5f1 !important;
+}
+
+.article-body .highlight code,
+.article-body .highlight span {
+  color: #1f2a24 !important;
+  background: transparent !important;
 }
 
 .site-footer {
